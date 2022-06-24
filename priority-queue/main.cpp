@@ -9,7 +9,7 @@ int main() {
         >
     arbol;
 
-    arbol T
+    arbol T;
 
     vPair p1('A', 'C'),
         p2('A', 'D'),

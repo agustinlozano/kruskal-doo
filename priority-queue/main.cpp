@@ -1,14 +1,6 @@
 #include "pq.h"
 
 int main() {
-    typedef priority_queue
-        <
-            edge,
-            vector <edge>,
-            MenorValor
-        >
-    arbol;
-
     arbol T;
 
     vPair p1('A', 'C'),
@@ -37,6 +29,16 @@ int main() {
     T.push(a6);
     T.push(a7);
     T.push(a8);
+
+    cout << "Tamanio de la cola: " << T.size() << endl;
+    cout << "Primer elemento: " << T.top() << endl;
+    cout << "Contenido: ";
+
+    while (!cola.empty()) {
+        cout << '\t' << T.top();
+        T.pop();
+    }
+    cout << '\n';
 
     return 0;
 }

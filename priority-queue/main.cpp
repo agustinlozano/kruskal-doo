@@ -1,5 +1,8 @@
 #include "pq.h"
 
+typedef
+priority_queue <edge, vector<edge>, MenorValor> arbol;
+
 int main() {
     arbol T;
 
@@ -30,15 +33,8 @@ int main() {
     T.push(a7);
     T.push(a8);
 
+    cout << "Estado de la cola: " << T.empty() << endl;
     cout << "Tamanio de la cola: " << T.size() << endl;
-    cout << "Primer elemento: " << T.top() << endl;
-    cout << "Contenido: ";
-
-    while (!cola.empty()) {
-        cout << '\t' << T.top();
-        T.pop();
-    }
-    cout << '\n';
 
     return 0;
 }

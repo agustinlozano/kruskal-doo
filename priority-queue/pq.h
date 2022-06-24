@@ -8,8 +8,6 @@ using namespace std;
 
 typedef pair<char, char> vPair;
 typedef pair<pair<char, char>, int> edge;
-typedef priority_queue
-    <edge, vector <edge>, MenorValor> arbol;
 
 /**
  * Vemos que se declara una clase con el sentido 
@@ -28,4 +26,5 @@ class MenorValor {
             return e1.second > e2.second;
         }
 };
+
 #endif

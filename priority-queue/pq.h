@@ -22,7 +22,7 @@ class MenorValor {
          * param e2 de tipo arista
          * return true en caso que el peso de e1 sea mayor al de e2
          */
-        bool operator()(arista e1, arista e2) {
+        bool operator()(edge e1, edge e2) {
             return e1.second > e2.second;
         }
 };

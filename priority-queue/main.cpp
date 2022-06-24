@@ -9,6 +9,8 @@ int main() {
         >
     arbol;
 
+    arbol T
+
     vPair p1('A', 'C'),
         p2('A', 'D'),
         p3('B', 'D'),
@@ -27,14 +29,14 @@ int main() {
         a7(p7, 3),
         a8(p8, 3);
 
-    arbol.push(a1);
-    arbol.push(a2);
-    arbol.push(a3);
-    arbol.push(a4);
-    arbol.push(a5);
-    arbol.push(a6);
-    arbol.push(a7);
-    arbol.push(a8);
+    T.push(a1);
+    T.push(a2);
+    T.push(a3);
+    T.push(a4);
+    T.push(a5);
+    T.push(a6);
+    T.push(a7);
+    T.push(a8);
 
     return 0;
 }

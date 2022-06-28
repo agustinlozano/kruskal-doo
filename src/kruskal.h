@@ -15,7 +15,7 @@ class Graph {
     // Cola de prioridad con los pesos de las aristas
     tree sorted_graph;
     // Arbol de minimal
-    vector<edge> arbol_minimo;
+    vector<edge> msf;
 
 public:
     // constructor
@@ -53,12 +53,16 @@ public:
     // la cola de prioridad teniendo
     // en cuenta los costos.
     void _insert();
+
     edge sacar_min();
+
     void imprimirQueue();
+
+    vector<edge> getMSF();
 
     // Sobrercarga de la salida
     // estandar para mostrar al grafo
-    friend ostream & operator<<(ostream &, Graph);
+    // ostream& operator<<(ostream &, vector<edge>);
 };
 
 #endif
